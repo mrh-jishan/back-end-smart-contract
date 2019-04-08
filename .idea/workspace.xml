@@ -2,26 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72dac927-48cc-46d8-aeb7-87c67473986a" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.pem/private.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.pem/public.pem" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/services/user/user.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v1/authentication.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/public/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v1/contract.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/secure/contract.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/controller/v1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/mongo/schemas/auth.schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/mongo/schemas/auth.schema.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/db/mongo/schemas/user.schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/mongo/schemas/user.schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v1/public/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/public/auth.controller.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/middlewares/responseHandler.js" beforeDir="false" afterPath="$PROJECT_DIR$/middlewares/responseHandler.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/models/user.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/user.model.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/package-lock.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/package.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/v1/auth.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v1/public/auth.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/v1/contract.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v1/secure/contract.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/v1/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v1/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth/auth.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validators/v1/user.validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/validators/v1/user.validator.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -37,8 +19,8 @@
       <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/controller/v1/public/auth.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+            <state relative-caret-position="165">
+              <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
             </state>
           </provider>
         </entry>
@@ -55,8 +37,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/middlewares/responseHandler.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="405">
-              <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
+            <state relative-caret-position="60">
+              <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
             </state>
           </provider>
         </entry>
@@ -187,9 +169,9 @@
         <option value="$PROJECT_DIR$/services/index.js" />
         <option value="$PROJECT_DIR$/models/index.js" />
         <option value="$PROJECT_DIR$/db/mongo/schemas/auth.schema.js" />
-        <option value="$PROJECT_DIR$/middlewares/responseHandler.js" />
         <option value="$PROJECT_DIR$/services/user/user.service.js" />
         <option value="$PROJECT_DIR$/models/user.model.js" />
+        <option value="$PROJECT_DIR$/middlewares/responseHandler.js" />
         <option value="$PROJECT_DIR$/controller/v1/public/auth.controller.js" />
       </list>
     </option>
@@ -371,12 +353,12 @@
       <updated>1554730625402</updated>
       <workItem from="1554730626523" duration="2610000" />
       <workItem from="1554736033252" duration="2424000" />
-      <workItem from="1554738779322" duration="3443000" />
+      <workItem from="1554738779322" duration="3695000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="8477000" />
+    <option name="totallyTimeSpent" value="8729000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="25" width="1873" height="1055" extended-state="6" />
@@ -636,13 +618,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/middlewares/responseHandler.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="405">
-          <caret line="27" column="38" lean-forward="true" selection-start-line="27" selection-start-column="38" selection-end-line="27" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/services/user/user.service.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -678,10 +653,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/middlewares/responseHandler.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="60">
+          <caret line="4" column="19" lean-forward="true" selection-start-line="4" selection-start-column="19" selection-end-line="4" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/controller/v1/public/auth.controller.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
-          <caret line="9" column="10" lean-forward="true" selection-start-line="9" selection-start-column="10" selection-end-line="9" selection-end-column="10" />
+        <state relative-caret-position="165">
+          <caret line="11" column="25" selection-start-line="11" selection-start-column="25" selection-end-line="11" selection-end-column="25" />
         </state>
       </provider>
     </entry>

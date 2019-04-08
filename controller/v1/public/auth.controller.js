@@ -1,11 +1,11 @@
 'use strict';
 
-const service = require("../../../services");
+const userService = require("../../../services/user/user.service");
 
 const register = (req, res, next) => {
-    service.user.createUser(req.body).then(res => {
+    userService.createUser(req.body).then(data => {
         res.body = {
-            data: {},
+            data: data,
             message: 'SUCCESS'
         };
         next();
@@ -17,7 +17,7 @@ const login = (req, res, next) => {
     res.body = {
         data: {},
         message: 'success'
-    }
+    };
     next()
 }
 

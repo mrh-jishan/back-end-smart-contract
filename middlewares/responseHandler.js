@@ -11,8 +11,6 @@ module.exports = (req, res, next) => {
             delete response.errors;
         }
         var message = langs[req.query.lang || 'en-us'][response.success ? 'success' : 'errors'][res.body.message || 'CUSTOM_MESSAGE'];
-        // console.log(langs[req.query.lang || 'en-us'][response.success ? 'success' : 'errors']);
-        // console.log("M", message);
         try {
             response.message = message.message;
             response.status = message.code || 200;
