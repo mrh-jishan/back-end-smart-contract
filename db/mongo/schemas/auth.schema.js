@@ -10,15 +10,16 @@ const authSchema = new mongoose.Schema({
             type: String
         },
         accessToken: {
-            type: email
+            type: String
         },
         accessTokenExp: {
             type: String
         },
         refreshToken: {
             type: String
-        }, refreshTokenExp: {
-            type: email
+        },
+        refreshTokenExp: {
+            type: String
         },
         valid: {
             type: String

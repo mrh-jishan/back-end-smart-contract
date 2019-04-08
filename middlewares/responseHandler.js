@@ -1,20 +1,7 @@
 'use strict';
 var langs = require('../langs');
 const fs = require('fs');
-module.exports = function (req, res, next) {
-    // res.body.errors = res.body.errors || [];
-    // if(res.body && (Object.keys(res.body.data).length || Object.keys(res.body.errors).length) )
-    // if (req.files) {
-    //   Object.keys(req.files).forEach(fileKey => {
-    //     if (Array.isArray(req.files[fileKey])) {
-    //       req.files[fileKey].forEach(f => {
-    //         fs.unlink(f.path);
-    //       })
-    //     } else {
-    //       fs.unlink(req.files[fileKey].path);
-    //     }
-    //   })
-    // }
+module.exports = (req, res, next) => {
     if (res.body) {
         let response = {};
         response.data = res.body.data || {};

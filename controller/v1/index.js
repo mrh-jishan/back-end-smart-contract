@@ -1,4 +1,4 @@
-const contract = require('./contract.controller');
+const contract = require('./secure/contract.controller');
 
 module.exports = {
     contract,

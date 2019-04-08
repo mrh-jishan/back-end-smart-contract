@@ -1,7 +1,7 @@
 'use strict';
 var responseHandler = require('../../middlewares/responseHandler');
-const contractRoute = require('./contract.route');
-const auth = require('./auth.route');
+const contractRoute = require('./secure/contract.route');
+const auth = require('./public/auth.route');
 
 
 module.exports = app => {

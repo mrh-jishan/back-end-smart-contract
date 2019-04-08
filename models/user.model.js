@@ -3,15 +3,18 @@
 require('../db/mongo/schemas/user.schema');
 const mongoose = require('mongoose');
 mongoose.Promise = global.Promise;
-const _ = require('lodash'), User = mongoose.model('User');
+const _ = require('lodash');
+const User = mongoose.model('User');
 
 
 const create = (config = {}) => {
     return new Promise((resolve, reject) => {
-        let newUser = new User(config);
-        newUser.save((err, doc) => err ? reject(err) : resolve(doc));
+        const user = new User(config);
+        user.save((err, doc) => err ? reject(err) : resolve(doc));
     });
 };
+
+
 const read = (query, options = {}) => {
     return new Promise((resolve, reject) => {
         if (options.multi) {

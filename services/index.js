@@ -1,9 +1,10 @@
 'use strict';
 
 
-const auth = require('./auth.service');
-// const captcha = require('./captcha.service');
+const auth = require('./auth/auth.service');
+const user = require('./user/user.service');
 
 module.exports = {
-    auth
+    auth,
+    user
 }
