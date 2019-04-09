@@ -11,6 +11,8 @@ const create = (config = {}) => {
         newContract.save((err, doc) => err ? reject(err) : resolve(doc));
     });
 };
+
+
 const read = (query, options = {}) => {
     return new Promise((resolve, reject) => {
         if (options.multi) {
@@ -24,6 +26,7 @@ const read = (query, options = {}) => {
         }
     });
 };
+
 const update = (query, update, options = {}) => {
     options = _.extend(options, {upsert: false, runValidators: true});
     return new Promise((resolve, reject) => {
@@ -31,17 +34,19 @@ const update = (query, update, options = {}) => {
             .exec((err, doc) => err ? reject(err) : resolve(doc));
     });
 };
+
 const deleteContract = (query) => {
     return new Promise((resolve, reject) => {
         Contract.remove(query, (err, Contract) => err ? reject(err) : resolve(Contract));
     });
 };
+
+
 const count = (query = {}) => {
     return new Promise((resolve, reject) => {
         Contract.count(query, (err, count) => err ? reject(err) : resolve(count));
     })
 };
-
 
 module.exports = {
     create,

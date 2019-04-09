@@ -2,13 +2,13 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="72dac927-48cc-46d8-aeb7-87c67473986a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pem/private.pem" beforeDir="false" afterPath="$PROJECT_DIR$/.pem/private.pem" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.pem/public.pem" beforeDir="false" afterPath="$PROJECT_DIR$/.pem/public.pem" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/services/contract/contract.service.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/controller/v1/public/auth.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/public/auth.controller.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/routes/v1/public/auth.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v1/public/auth.route.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/services/auth/auth.service.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/auth/auth.service.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/validators/v1/user.validator.js" beforeDir="false" afterPath="$PROJECT_DIR$/validators/v1/user.validator.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/controller/v1/secure/contract.controller.js" beforeDir="false" afterPath="$PROJECT_DIR$/controller/v1/secure/contract.controller.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/db/mongo/schemas/contract.schema.js" beforeDir="false" afterPath="$PROJECT_DIR$/db/mongo/schemas/contract.schema.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/models/contract.model.js" beforeDir="false" afterPath="$PROJECT_DIR$/models/contract.model.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/routes/v1/secure/contract.route.js" beforeDir="false" afterPath="$PROJECT_DIR$/routes/v1/secure/contract.route.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/services/index.js" beforeDir="false" afterPath="$PROJECT_DIR$/services/index.js" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/.tmp/" />
     <ignored path="$PROJECT_DIR$/temp/" />
@@ -24,17 +24,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/controller/v1/public/auth.controller.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/validators/v1/user.validator.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="750">
-              <caret line="50" column="5" lean-forward="true" selection-start-line="50" selection-start-column="5" selection-end-line="50" selection-end-column="5" />
+            <state relative-caret-position="240">
+              <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -42,19 +33,27 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/langs/en-us.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="105">
-              <caret line="21" column="12" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="12" />
+            <state relative-caret-position="75">
+              <caret line="5" column="16" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="16" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/controller/v1/secure/contract.controller.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/auth/auth.service.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="375">
-              <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+            <state relative-caret-position="797">
+              <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
               <folding>
-                <element signature="e#2525#2527#0" />
                 <element signature="e#8072#8074#0" />
               </folding>
             </state>
@@ -62,37 +61,55 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/index.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
-              <caret line="9" column="8" selection-start-line="9" selection-start-column="8" selection-end-line="9" selection-end-column="8" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/models/user.model.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="661">
-              <caret line="48" selection-start-line="48" selection-end-line="48" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/routes/v1/public/auth.route.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="75" lean-forward="true" selection-start-line="8" selection-start-column="75" selection-end-line="8" selection-end-column="75" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/services/user/user.service.js">
           <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="225">
+              <caret line="15" lean-forward="true" selection-end-line="15" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/services/contract/contract.service.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="390">
+              <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/models/contract.model.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="750">
+              <caret line="50" selection-start-line="50" selection-end-line="50" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/db/mongo/schemas/contract.schema.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="285">
+              <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/services/index.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="180">
+              <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/routes/v1/secure/contract.route.js">
+          <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="90">
-              <caret line="6" column="43" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="43" />
+              <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -118,7 +135,6 @@
       <find>API_KEY</find>
       <find>private.pem</find>
       <find>Auth</find>
-      <find>config</find>
       <find>passwor</find>
       <find>bcrypt</find>
       <find>crypto</find>
@@ -127,7 +143,11 @@
       <find>ALREADY_REGISTERED</find>
       <find>exi</find>
       <find>sal</find>
+      <find>config</find>
     </findStrings>
+    <replaceStrings>
+      <replace>req.query</replace>
+    </replaceStrings>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -135,7 +155,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/db/mongo/schemas/contract.schema.js" />
         <option value="$PROJECT_DIR$/middlewares/responseBuilder.js" />
         <option value="$PROJECT_DIR$/middlewares/prettyConsole.js" />
         <option value="$PROJECT_DIR$/middlewares/multers3.service.js" />
@@ -145,18 +164,15 @@
         <option value="$PROJECT_DIR$/middlewares/captcha.js" />
         <option value="$PROJECT_DIR$/controller/v1/contract.controller.js" />
         <option value="$PROJECT_DIR$/controller/v1/auth.controller.js" />
-        <option value="$PROJECT_DIR$/models/contract.model.js" />
         <option value="$PROJECT_DIR$/controller/v1/index.js" />
         <option value="$PROJECT_DIR$/routes/v1/contract.route.js" />
         <option value="$PROJECT_DIR$/routes/v1/auth.route.js" />
         <option value="$PROJECT_DIR$/models/auth.model.js" />
         <option value="$PROJECT_DIR$/.gitignore" />
-        <option value="$PROJECT_DIR$/routes/v1/secure/contract.route.js" />
         <option value="$PROJECT_DIR$/routes/v1/index.js" />
         <option value="$PROJECT_DIR$/services/auth.service.js" />
         <option value="$PROJECT_DIR$/controller/v1/authentication.controller.js" />
         <option value="$PROJECT_DIR$/db/mongo/schemas/user.schema.js" />
-        <option value="$PROJECT_DIR$/services/index.js" />
         <option value="$PROJECT_DIR$/models/index.js" />
         <option value="$PROJECT_DIR$/db/mongo/schemas/auth.schema.js" />
         <option value="$PROJECT_DIR$/services/user/user.service.js" />
@@ -169,8 +185,14 @@
         <option value="$PROJECT_DIR$/.pem/public.pem" />
         <option value="$PROJECT_DIR$/validators/v1/user.validator.js" />
         <option value="$PROJECT_DIR$/routes/v1/public/auth.route.js" />
-        <option value="$PROJECT_DIR$/controller/v1/public/auth.controller.js" />
         <option value="$PROJECT_DIR$/services/auth/auth.service.js" />
+        <option value="$PROJECT_DIR$/services/index.js" />
+        <option value="$PROJECT_DIR$/controller/v1/public/auth.controller.js" />
+        <option value="$PROJECT_DIR$/db/mongo/schemas/contract.schema.js" />
+        <option value="$PROJECT_DIR$/models/contract.model.js" />
+        <option value="$PROJECT_DIR$/routes/v1/secure/contract.route.js" />
+        <option value="$PROJECT_DIR$/controller/v1/secure/contract.controller.js" />
+        <option value="$PROJECT_DIR$/services/contract/contract.service.js" />
       </list>
     </option>
   </component>
@@ -296,6 +318,12 @@
               <item name="smart-contract" type="b2602c69:ProjectViewProjectNode" />
               <item name="smart-contract" type="462c0819:PsiDirectoryNode" />
               <item name="services" type="462c0819:PsiDirectoryNode" />
+              <item name="contract" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="smart-contract" type="b2602c69:ProjectViewProjectNode" />
+              <item name="smart-contract" type="462c0819:PsiDirectoryNode" />
+              <item name="services" type="462c0819:PsiDirectoryNode" />
               <item name="user" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
@@ -363,12 +391,12 @@
       <workItem from="1554730626523" duration="2610000" />
       <workItem from="1554736033252" duration="2424000" />
       <workItem from="1554738779322" duration="4152000" />
-      <workItem from="1554773654734" duration="4071000" />
+      <workItem from="1554773654734" duration="5774000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="13257000" />
+    <option name="totallyTimeSpent" value="14960000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="47" y="25" width="1873" height="1055" extended-state="6" />
@@ -465,13 +493,6 @@
     <entry file="file://$PROJECT_DIR$/db/mongo/smethods/index.js">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/db/mongo/schemas/contract.schema.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="14" lean-forward="true" selection-start-line="8" selection-start-column="14" selection-end-line="8" selection-end-column="14" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middlewares/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="420">
@@ -521,13 +542,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/services/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="150">
-          <caret line="10" lean-forward="true" selection-start-line="10" selection-end-line="10" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/node_modules/mongoose/lib/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="298">
@@ -542,13 +556,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/v1/secure/contract.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="285">
-          <caret line="19" selection-start-line="19" selection-end-line="19" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/middlewares/responseHandler.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="60">
@@ -560,13 +567,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="210">
           <caret line="14" column="25" selection-start-line="14" selection-start-column="25" selection-end-line="14" selection-end-column="25" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/routes/v1/secure/contract.route.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="60">
-          <caret line="4" column="17" selection-start-line="4" selection-start-column="17" selection-end-line="4" selection-end-column="17" />
         </state>
       </provider>
     </entry>
@@ -591,13 +591,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="165">
           <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/models/contract.model.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="24" column="7" selection-start-line="24" selection-start-column="7" selection-end-line="24" selection-end-column="7" />
         </state>
       </provider>
     </entry>
@@ -650,13 +643,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/langs/en-us.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="105">
-          <caret line="21" column="12" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="12" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/routes/v1/public/auth.route.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="120">
@@ -671,20 +657,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/controller/v1/public/auth.controller.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="21" column="39" selection-start-line="21" selection-start-column="39" selection-end-line="21" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/services/user/user.service.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="90">
-          <caret line="6" column="43" selection-start-line="6" selection-start-column="35" selection-end-line="6" selection-end-column="43" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/models/index.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="135">
@@ -694,12 +666,74 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/services/auth/auth.service.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="375">
-          <caret line="25" column="31" selection-start-line="25" selection-start-column="31" selection-end-line="25" selection-end-column="31" />
+        <state relative-caret-position="797">
+          <caret line="105" lean-forward="true" selection-start-line="105" selection-end-line="105" />
           <folding>
-            <element signature="e#2525#2527#0" />
             <element signature="e#8072#8074#0" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/user/user.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="225">
+          <caret line="15" lean-forward="true" selection-end-line="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="180">
+          <caret line="12" lean-forward="true" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/langs/en-us.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="75">
+          <caret line="5" column="16" selection-start-line="5" selection-start-column="2" selection-end-line="5" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/v1/public/auth.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="240">
+          <caret line="16" column="40" selection-start-line="16" selection-start-column="40" selection-end-line="16" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/db/mongo/schemas/contract.schema.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" lean-forward="true" selection-start-line="19" selection-end-line="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/routes/v1/secure/contract.route.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="90">
+          <caret line="6" column="40" lean-forward="true" selection-start-line="6" selection-start-column="40" selection-end-line="6" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/models/contract.model.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="750">
+          <caret line="50" selection-start-line="50" selection-end-line="50" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/controller/v1/secure/contract.controller.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="19" column="29" selection-start-line="19" selection-start-column="29" selection-end-line="19" selection-end-column="29" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/services/contract/contract.service.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="390">
+          <caret line="26" column="22" selection-start-line="26" selection-start-column="22" selection-end-line="26" selection-end-column="22" />
         </state>
       </provider>
     </entry>

@@ -7,11 +7,15 @@ const model = require('../../../models')
 const register = (req, res, next) => {
 
     service.user.createUser(req.body).then(data => {
-        res.body = {
-            data: data,
-            message: 'SUCCESS'
-        };
-        next();
+        if (data) {
+            res.body = {
+                data: data,
+                message: 'SUCCESS'
+            };
+            next();
+        } else {
+            next({'err': 'INTERNAL_ERROR'});
+        }
     });
 };
 
@@ -20,7 +24,7 @@ const login = (req, res, next) => {
         if (user) {
             if (bcrypt.compareSync(req.body.password, user.password)) {
                 service.auth.generateToken(req.body).then(token => {
-                    console.log('--------token-------------',token);
+                    console.log('--------token-------------', token);
                     res.body = {
                         data: token,
                         message: 'success'

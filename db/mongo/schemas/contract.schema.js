@@ -3,7 +3,7 @@
 const mongoose = require('mongoose');
 
 const contractSchema = new mongoose.Schema({
-        text: {
+        data: {
             type: String
         },
         contractAddress: {
