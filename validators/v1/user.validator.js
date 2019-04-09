@@ -3,13 +3,30 @@ const model = require('./../../models')
 
 const registerSchema = Joi.object().keys({
     name: Joi.string().alphanum().min(3).max(30).required(),
-    password: Joi.string().regex(/^[a-zA-Z0-9]{3,30}$/),
-    email: Joi.string().email({minDomainAtoms: 2})
+    password: Joi.string().required().regex(/^[a-zA-Z0-9]{3,30}$/),
+    email: Joi.string().required().email({minDomainAtoms: 2})
+});
+
+
+const loginSchema = Joi.object().keys({
+    password: Joi.string().required().regex(/^[a-zA-Z0-9]{3,30}$/),
+    email: Joi.string().required().email({minDomainAtoms: 2})
 });
 
 
 const validateRegisterData = (req, res, next) => {
     Joi.validate(res.body, registerSchema, (err, res) => {
+        if (err) {
+            next(err)
+        } else {
+            next()
+        }
+    })
+}
+
+
+const validateLoginData = (req, res, next) => {
+    Joi.validate(res.body, loginSchema, (err, res) => {
         if (err) {
             next(err)
         } else {
@@ -29,10 +46,12 @@ const validateEmail = (req, res, next) => {
     })
 }
 
+
 module.exports =
     {
         validateRegisterData,
-        validateEmail
+        validateLoginData,
+        validateEmail,
     }
 
 

@@ -1,70 +1,63 @@
 'use strict';
 
-// const jwt = require('jsonwebtoken');
-// const fs = require('fs');
-// const path = require('path');
-// const privateKey = fs.readFileSync(path.resolve(__dirname + './../.pem/private.pem'), 'utf8');
-// const publicKey = fs.readFileSync(path.resolve(__dirname + './../.pem/public.pem'), 'utf8');
-// const model = require('../../models');
-// const crypto = require('./salted-password');
-// const helper = require('../helper');
+const jwt = require('jsonwebtoken');
+const fs = require('fs');
+const path = require('path');
+const privateKey = fs.readFileSync(path.resolve(__dirname + './../../.pem/private.pem'), 'utf8');
+const publicKey = fs.readFileSync(path.resolve(__dirname + './../../.pem/public.pem'), 'utf8');
+const model = require('../../models');
+const bcrypt = require('bcrypt');
 
 
-// const generateToken = (config) => new Promise((resolve, reject) => {
-//     let tokenObj = {role: 'user', email: config.email}
-//     let jwtData = {};
-//     let now = new Date().getTime();
-//     let accessTokenExp = now + Number(process.env.TOKEN_EXP_MILLISEC);
-//     jwtData.exp = accessTokenExp;
-//     jwtData.data = tokenObj;
-//     jwt.sign(jwtData, privateKey, {algorithm: process.env.JWT_ALGORITHM}, (err, token) => {
-//         if (err) {
-//             reject({
-//                 err: "TRY_AGAIN"
-//             });
-//         } else {
-//             crypto.createRefreshToken(crypto.genRandomString)
-//                 .then(hash => {
-//                     let tokenObj = {
-//                         "userId": config._id,
-//                         "role": 'user',
-//                         "accessToken": token,
-//                         "accessTokenExp": accessTokenExp,
-//                         "refreshToken": hash,
-//                         "refreshTokenExp": now + Number(process.env.REFRESH_TOKEN_EXP),
-//                         "valid": true,
-//                         "refreshTokenRequestCount": 0
-//                     };
-//                     return model.auth.create(tokenObj);
-//                 }).then(tokenObj => {
-//                 resolve({
-//                     "accesstoken": tokenObj.accessToken,
-//                     "refreshToken": tokenObj.refreshToken
-//                 });
-//             }).catch(err => {
-//                 reject({err: "TRY_AGAIN"})
-//             })
-//         }
-//     });
-// });
-//
-// const createNewAccessToken = config => new Promise((resolve, reject) => {
-//     let tokenObj = {role: 'user', email: config.email}
-//     let jwtData = {};
-//     let now = new Date().getTime();
-//     let accessTokenExp = now + Number(process.env.TOKEN_EXP_MILLISEC);
-//     jwtData.exp = accessTokenExp;
-//     jwtData.data = tokenObj;
-//     jwt.sign(jwtData, privateKey, {
-//         algorithm: process.env.JWT_ALGORITHM
-//     }, function (err, token) {
-//         if (err) {
-//             reject(err)
-//         } else {
-//             resolve(token)
-//         }
-//     });
-// });
+const generateToken = (config) => new Promise((resolve, reject) => {
+    let tokenObj = {role: 'client', email: config.email}
+    let jwtData = {};
+    let now = new Date().getTime();
+    let accessTokenExp = now + Number(process.env.TOKEN_EXP_MILLISEC);
+    jwtData.exp = accessTokenExp;
+    jwtData.data = tokenObj;
+    jwt.sign(jwtData, privateKey, {algorithm: process.env.JWT_ALGORITHM}, (err, token) => {
+        if (err) {
+            reject({
+                err: "TRY_AGAIN"
+            });
+        } else {
+            let tokenObj = {
+                "role": 'client',
+                "accessToken": token,
+                "accessTokenExp": accessTokenExp,
+                "refreshToken": bcrypt.hashSync(config.email, 10),
+                "refreshTokenExp": now + Number(process.env.REFRESH_TOKEN_EXP),
+                "valid": true,
+                "refreshTokenRequestCount": 0
+            };
+
+            console.log(tokenObj);
+
+            model.Auth.create(tokenObj).then(resolve).catch(reject);
+
+
+        }
+    });
+});
+
+
+const createNewAccessToken = config => new Promise((resolve, reject) => {
+    let tokenObj = {role: 'client', email: config.email}
+    let jwtData = {};
+    let now = new Date().getTime();
+    jwtData.exp = now + Number(process.env.TOKEN_EXP_MILLISEC);
+    jwtData.data = tokenObj;
+    jwt.sign(jwtData, privateKey, {algorithm: process.env.JWT_ALGORITHM}, (err, token) => {
+        if (err) {
+            reject(err)
+        } else {
+            resolve(token)
+        }
+    });
+});
+
+
 //
 // const signJWT = config => new Promise((resolve, reject) => {
 //     let tokenObj = config;
@@ -231,19 +224,7 @@
 // });
 //
 //
-// const login = config => new Promise((resolve, reject) => {
-//     helper.Fineract.login({
-//         uri: `${helper.URL.superAdminLogin}?grant_type=${config.grantType || 'password'}&username=${config.userName}&password=${config.password}`,
-//         method: 'POST',
-//         'headers': {
-//             'x-tenant-identifier': process.env.TENENT_ID
-//         },
-//         json: true
-//     })
-//         .then(resolve)
-//         .catch(reject)
-// });
-//
+
 //
 // const refreshToken = config => new Promise((resolve, reject) => {
 //     helper.Fineract.connect({
@@ -261,4 +242,4 @@
 // });
 
 
-module.exports = {}
+module.exports = {generateToken}
