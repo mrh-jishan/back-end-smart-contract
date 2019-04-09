@@ -28,34 +28,28 @@ const generateToken = (config) => new Promise((resolve, reject) => {
                 "accessTokenExp": accessTokenExp,
                 "refreshToken": bcrypt.hashSync(config.email, 10),
                 "refreshTokenExp": now + Number(process.env.REFRESH_TOKEN_EXP),
-                "valid": true,
-                "refreshTokenRequestCount": 0
+                "valid": true
             };
-
-            console.log(tokenObj);
-
             model.Auth.create(tokenObj).then(resolve).catch(reject);
-
-
         }
     });
 });
 
 
-const createNewAccessToken = config => new Promise((resolve, reject) => {
-    let tokenObj = {role: 'client', email: config.email}
-    let jwtData = {};
-    let now = new Date().getTime();
-    jwtData.exp = now + Number(process.env.TOKEN_EXP_MILLISEC);
-    jwtData.data = tokenObj;
-    jwt.sign(jwtData, privateKey, {algorithm: process.env.JWT_ALGORITHM}, (err, token) => {
-        if (err) {
-            reject(err)
-        } else {
-            resolve(token)
-        }
-    });
-});
+// const createNewAccessToken = config => new Promise((resolve, reject) => {
+//     let tokenObj = {role: 'client', email: config.email}
+//     let jwtData = {};
+//     let now = new Date().getTime();
+//     jwtData.exp = now + Number(process.env.TOKEN_EXP_MILLISEC);
+//     jwtData.data = tokenObj;
+//     jwt.sign(jwtData, privateKey, {algorithm: process.env.JWT_ALGORITHM}, (err, token) => {
+//         if (err) {
+//             reject(err)
+//         } else {
+//             resolve(token)
+//         }
+//     });
+// });
 
 
 //
@@ -77,6 +71,8 @@ const createNewAccessToken = config => new Promise((resolve, reject) => {
 //     });
 // });
 //
+
+
 // const verifyToken = (token, apikey) => new Promise((resolve, reject) => {
 //     if (!token) {
 //         reject({
@@ -106,6 +102,8 @@ const createNewAccessToken = config => new Promise((resolve, reject) => {
 //         });
 //     }
 // });
+
+
 //
 // const decode = (token) => new Promise((resolve, reject) => {
 //     console.log(token);
