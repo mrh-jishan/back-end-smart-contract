@@ -8,6 +8,9 @@ const contractSchema = new mongoose.Schema({
         },
         contractAddress: {
             type: String
+        },
+        user: {
+            type: String
         }
     },
     {
